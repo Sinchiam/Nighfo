@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Onest&display=swap');
+body{
+    background-color:#04364A;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+li,a{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+    background-color: #04364A;
+}
+.weekends{
+  background-color:rgb(85, 124, 111);
+}
+.links{
+    list-style: none;
+}
+.links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.links li a{
+    transition: all 0.3 ease 0s;
+}
+.links li a:hover{
+    color: grey;
+}
+.title{
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Nunito', sans-serif;
+    margin: 5px;   
+}
+.text-right{
+  color:rgb(89, 104, 105);
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 19px;
+  font-family: 'Nunito', sans-serif;
+  display: block;
+  height:10%;
+  text-align:-webkit-center;
+  justify-self:center;
+}
+.text-left{
+  float: left;
+  color: rgb(194, 193, 165);
+  width: 85%;
+  font-size: 19px;
+  font-family: 'Nunito', sans-serif;
+  display: block;
+  text-align: -webkit-center;
+  justify-content: baseline;
+}
+.img{
+  width: 300px;
+  padding: 5px;
+  margin: 40px;
+  float: left;
+  height: 7%;
+  border: skyblue 2px solid;
+  margin-right: auto;
+  margin-left: 15%;
+}
+.schoollink{
+  height: 130px;
+  width: 200px;
+}
+.schoollink a{
+  color: yellow;
+}
+.schoollink a:hover{
+    color:blue;
+}
+.schoollink a:visited{
+    color: green;
+}
+ul{
+    list-style: none;
+}
+.section_aboutme{
+  padding:2em;
+  width: 100%;
+  display:flex;
+  background-color: #bcb8b1;
+}
+.section_experience{
+  padding:2em;
+  width: 100%;
+  display:flex;
+  background-color:rgb(89, 104, 105);
+}
+.img_icons{
+  width: 45px;
+  border-radius:15%; 
+  margin-left:2%;
+  height: 45px;
+  margin-bottom:5px;
+  display: inline-block;
+  justify-content: right;
+}
+.container {
+    width: max-content, auto;
+    height: max-content, auto;
+    position: relative;
+    display: flex;
+    padding: 2% 0px 0px 0px;
+    justify-content: center;
+    top: 10%;
+    right: 0%;
+  }
+  .calendar {
+    height: 610px;
+    width: max-content;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 30px 50px 0px 50px;
+  }
+  .calendar-heading {
+    color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;;
+    padding: 10px;
+    background-color: #0e805e;
+  }
+  .calendar-body {
+    pad: 10px;
+  }
+  .calendar-week-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: 600;
+    cursor: pointer;
+    color:rgb(104, 104, 104);
+    border-radius: 20% ;
+  }
+  .calendar-week-days div:hover {
+  color:black;
+  transform: scale(1.2);
+  transition: all .2s ease-in-out;
+  }
+  .calendar-week-days div {
+    display: grid;
+    place-items: center;
+    color: var(9s);
+    height: 50px;
+  }
+  .calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+    color: rgb(29, 107, 98);
+  }
+  .calendar-days div {
+    width: 37px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    position: relative;
+    cursor: pointer;
+    animation: to-top 1s forwards;
+  }
+  .month-picker {
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #40b995;
+  }
+  .month-picker:hover {
+    background-color: #40b995;
+  }
+  .month-picker:hover {
+    color: var(--color-txt);
+  }
+  .year-picker {
+    display: flex;
+    align-items: center;
+  }
+  .year-change {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin: 0px 10px;
+    cursor: pointer;
+  }
+  .year-change:hover {
+    background-color: var(--light-btn);
+    transition:all .2s ease-in-out ;
+    transform: scale(1.12);
+  }
+  .year-change:hover pre {
+    color: var(#363636);
+  }
+  .calendar-footer {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  #year:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 0.2 ease-in-out;
+  }
+  .calendar-days div span {
+    position: absolute;
+  }
+   .calendar-days div:hover {
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+    background-color: #fbc7d4;
+    border-radius: 20%;
+    color: #363636;
+  }
+  .calendar-days div.current-date {
+    color: #ebebeb;;
+    background-color: #509553;
+    border-radius: 20%;
+  }
+  .weekends {
+    color: aliceblue;
+    background-color: #0e805e;
+    border-radius: 450%;
+    box-sizing: 45px;
+  }
+  .month-list {
+    position: relative;
+    left: 0;
+    top: -50px;
+    background-color: #ebebeb;
+    color: var(--light-text);
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 5px;
+    border-radius: 20px;
+  }
+  .month-list > div {
+    display: grid;
+    place-content: center;
+    margin: 5px 10px;
+    transition: all 0.2s ease-in-out;
+  }
+  .month-list > div > div {
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .month-list > div > div:hover {
+    background-color:var(--light-btn);
+    color: var(--dark-text);
+    transform: scale(0.9);
+    transition: all 0.2s ease-in-out;
+  }
+  .month-list.show {
+    visibility: visible;
+    pointer-events: visible;
+    transition: 0.6s ease-in-out;
+    animation: to-left .71s forwards;
+  }
+  .month-list.hideonce{
+    visibility: hidden;
+  }
+  .month-list.hide {
+    animation: to-right 1s forwards;
+    visibility: none;
+    pointer-events: none;
+  }
+  .date-time-format {
+    width: max-content;
+    height: max-content;
+    font-family: Dubai Light, Century Gothic;
+    position: relative;
+    display: inline;
+    top: 140px;
+    justify-content: center;
+  }
+  .day-text-format {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.4rem;
+    padding-right: 5%;
+    border-right: 3px solid #9796f0;
+    position: absolute;
+    left: -1rem;
+  }
+  .date-time-value {
+    display: block;
+    height: max-content;
+    width: max-content;
+    position: relative;
+    left: 40%;
+    top: -18px;
+    text-align: center;
+  }
+  .time-format {
+    font-size: 1.5rem;
+  }
+  .time-format.hideTime {
+    animation: hidetime 1.5s forwards;
+  }
+  .day-text-format.hidetime {
+    animation: hidetime 1.5s forwards;
+  }
+  .date-format.hideTime {
+    animation: hidetime 1.5s forwards;
+  }
+  .day-text-format.showtime{
+    animation: showtime 1s forwards;
+  }
+  .time-format.showtime {
+    animation: showtime 1s forwards;
+  }
+  .date-format.showtime {
+    animation: showtime 1s forwards;
+  }
+  @keyframes to-top {
+    0% {
+      transform: translateY(0);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(100%);
+      opacity: 1;
+    }
+  }
+  @keyframes to-left {
+    0% {
+      transform: translatex(230%);
+      opacity: 1;
+    }
+    100% {
+      transform: translatex(0);
+      opacity: 1;
+    }
+  }
+  @keyframes to-right {
+    10% {
+      transform: translatex(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translatex(-150%);
+      opacity: 1;
+    }
+  }
+  @keyframes showtime {
+    0% {
+      transform: translatex(250%);
+      opacity: 1;
+    }
+    100% {
+      transform: translatex(0%);
+      opacity: 1;
+    }
+  }
+  @keyframes hidetime {
+    0% {
+      transform: translatex(0%);
+      opacity: 1;
+    }
+    100% {
+      transform: translatex(-370%);
+      opacity: 1;
+    }
+  }
+  @media (max-width:375px) {
+    .month-list>div{
+  
+      margin: 5px 0px;
+    }
+  }
+footer{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 30px 5%;
+    font-family: 'Onest', sans-serif;
+    background-color: #04364A;
+    color: antiquewhite;
+    height: max-content;
+  }
+  footer a:hover{
+    color: #0e805e;
+  }
