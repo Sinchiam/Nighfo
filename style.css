@@ -106,8 +106,7 @@ ul{
     width: 100%;
     display:flex;
     background-color:#505050;
-    border:#363636 2px solid;
-    border-radius:8%;
+    border:#363636 15px solid;
 }
 .section_goals{
   padding:2em;
