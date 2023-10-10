@@ -102,10 +102,12 @@ ul{
   background-color: #363636;
 }
 .section_experience{
-  padding:2em;
-  width: 100%;
-  display:flex;
-  background-color:#505050;
+    padding:2em;
+    width: 100%;
+    display:flex;
+    background-color:#505050;
+    border:#363636 2px solid;
+    border-radius:8%;
 }
 .section_goals{
   padding:2em;
