@@ -107,6 +107,12 @@ ul{
   display:flex;
   background-color:#505050;
 }
+.section_goals{
+  padding:2em;
+  width: 100%;
+  display:flex;
+  background-color: #505050;
+}
 .img_icons{
   width: 45px;
   border-radius:15%; 
